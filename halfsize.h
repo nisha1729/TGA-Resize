@@ -2,11 +2,7 @@
 #define HALFSIZE_H
 
 class tga
-{
-	// public:
-	// tga();
-	// ~tga();
-	
+{	
 	typedef struct
 	{
 		char idLength;
@@ -19,10 +15,10 @@ class tga
 		char palletEntrySize;
 		
         //image specification
-		short xOrigin;	//2
-		short yOrigin;	//2
-		short imageWidth;	//2
-		short imageHeight;	//2
+		short xOrigin;		//word
+		short yOrigin;		//word
+		short imageWidth;	//word
+		short imageHeight;	//word
 
 		char bitsperPixel;
 		char screenAttribute;
@@ -30,23 +26,13 @@ class tga
 	
 	typedef struct
 	{
-		// char *imageData;
-		char r,g,b;
-		// unsigned int  bitDepth;
-		// unsigned int  width;
-		// unsigned int  height;
-		// unsigned int  texID;
-		// unsigned int  type;
+		// Image Data: Pixel RBG(A) values
+		char r,g,b,a;
 	} TGAData;
 	
-	TGAHeader tgaHeader;
-	
+	TGAHeader tgaHeader;	
 	public: 
 		void resizeTGA(char*,char*);
-	// void LoadUncompressedTexture( TGAHeader *, std::fstream * );
-	// void LoadCompressedTexture( TGAHeader *, std::fstream * );
 };
 
-// } // namespace TGA
-
-#endif	//TARGA_H
+#endif	//HALFSIZE_H
