@@ -1,16 +1,15 @@
-#include "halfsize.h"
 #include "halfsize.cpp"
 
-int main()
+int main(int argc, char **argv)
 {
     tga p;
-    // unsigned char a='10';
-    // printf("0x20 is char:%c and int:%d.",a,a);
-    // return 0;
-    // int i;
-    // char q;
-    // q = '2';
-    // std::cout<<"\nQ: "<<q<<"\n";
-	p.resizeTGA("original.tga","half.tga");
+    char *in, *out;
+    if (argc!=3)
+        printf("\nInvalid input. Please try again.\n");
+    else{        
+        in = argv[1];
+        out = argv[2];
+        p.resizeTGA(in, out);
+    }
     return 0;
 }
