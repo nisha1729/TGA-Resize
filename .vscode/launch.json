@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
+            "program": "${workspaceFolder}/halfsize.exe",
             "args": ["original.tga", "half.tga"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -27,7 +27,7 @@
             "name": "(gdb) Attach",
             "type": "cppdbg",
             "request": "attach",
-            "program": "enter program name, for example ${workspaceFolder}/a.out",
+            "program": "${workspaceFolder}/halfsize.exe",
             "processId": "${command:pickProcess}",
             "MIMode": "gdb",
             "setupCommands": [
