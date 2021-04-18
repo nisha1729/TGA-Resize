@@ -6,4 +6,4 @@ A simple C++ code to generate a command line executable which resizes a TGA imag
 
 Only supports Unmapped RGB(A) 24/32-bit images (ImageType = 2). <br/>
 Executable: halfsize.exe  
-Created in Visual Studio Code, as part of an assignment for Summer 2020 Internship at Faro.
+Created in Visual Studio Code
